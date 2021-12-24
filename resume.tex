@@ -1,0 +1,290 @@
+%-------------------------
+% Resume in Latex
+% Author : Abey George
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{graphicx}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\RequirePackage{tikz}
+\RequirePackage{xcolor}
+\RequirePackage{fontawesome}
+\usepackage{tikz}
+\usetikzlibrary{svg.path}
+
+
+\definecolor{cvblue}{HTML}{0E5484}
+\definecolor{black}{HTML}{130810}
+\definecolor{darkcolor}{HTML}{0F4539}
+\definecolor{cvgreen}{HTML}{3BD80D}
+\definecolor{taggreen}{HTML}{00E278}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\colorlet{name}{black}
+\colorlet{tagline}{darkcolor}
+\colorlet{heading}{darkcolor}
+\colorlet{headingrule}{cvblue}
+\colorlet{accent}{darkcolor}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+% \pagestyle{fancy}
+% \fancyhf{}  % clear all header and footer fields
+% \fancyfoot{}
+% \renewcommand{\headrulewidth}{0pt}
+% \renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\large#1} & \textbf{\small #2} \\
+      \textit{\large#3} & \textit{\small #4} \\
+      
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+
+\newcommand\sbullet[1][.5]{\mathbin{\vcenter{\hbox{\scalebox{#1}{$\bullet$}}}}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+
+
+\begin{center}
+    {\Huge \scshape SHREYAS SRINIVASAN} \\ \vspace{1pt}
+    Chennai,Tamil Nadu \\ \vspace{1pt}
+    \small { \raisebox{-0.1\height}\faPhone\ \underline{+91-8754958937} ~} \href{mailto:shreyas0702@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{shreyas0702@gmail.com}} ~ 
+    \href{https://linkedin.com/in/shreyas-srinivasan-1b002b205}{\raisebox{-0.2\height}\faLinkedinSquare\ \underline{shreyas-srinivasan}}  ~
+    \href{https://github.com/Sh0702}{\raisebox{-0.2\height}\faGithub\ \underline{Sh0702}} ~
+    % \href{https://www.hackerrank.com/yourid}{\raisebox{-0.2\height}\faHackerrank\ \underline{yourid}} ~
+    % \href{https://codeforces.com/profile/yourid}{\raisebox{-0.2\height}\faPoll\ \underline{yourid}}
+    % \vspace{-8pt}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{EDUCATION}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {SSN College Of Engineering}{Aug 2019 -- May 2023}
+      {Bachelor of Technology in Information Technology - \textbf{CGPA} - \textbf{8.68}}{Chennai, Tamil Nadu}
+  \resumeSubHeadingListEnd
+  
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Padma Seshadhri Bala Bhavan Senior Secondary School}{June 2004 -- June 2019}
+      {12th Standard-\textbf{Percentage} - \textbf{91.4\%}}{Chennai, Tamil Nadu}
+      \linebreak
+      {10th Standard-\textbf{CGPA} - \textbf{9.8}}
+  \resumeSubHeadingListEnd
+
+%------RELEVANT COURSEWORK-------
+\section{COURSEWORK}
+    %\resumeSubHeadingListStart
+        \begin{multicols}{4}
+            \begin{itemize}[itemsep=-2pt, parsep=5pt]
+                \item Data Structures 
+                \item Algorithms
+                \item Operating Systems
+                \item Network Security
+                \item Database Management System (DBMS)
+                \item Artificial Intelligence
+                \item OOPS Concept
+                \item Web Development
+                \item Computer Organisation and Architecture
+                \item Theory of Computation
+                \item Software Engineering
+                \item Information Theory
+                \item Digital Image Processing
+            \end{itemize}
+        \end{multicols}
+        \vspace*{2.0\multicolsep}
+    %\resumeSubHeadingListEnd
+
+
+
+%-----------PROJECTS-----------
+\section{PROJECTS}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+       \resumeProjectHeading
+          {\href{https://github.com/Sh0702/Flight-Delay-Prediction}{\textbf{\large{\underline{Flight Delay Prediction}}} \href{Project Link}{\raisebox{-0.1\height}\faExternalLink }} $|$ \large{\underline{Python(sklearn, pandas, json, os, numpy matplotlib)}}}{Dec 2021}
+          \resumeItemListStart
+            \resumeItem{\normalsize{For a given flight and weather data in the years 2016 and 2017, a two-stage machine learning model was built to predict flight delay.}}
+            \resumeItem{\normalsize{In the process, different classification and regression models are studied and experimented to find the best classifier and regressor and the same was to observe the perfomance of the two-stage model.}}
+          \resumeItemListEnd 
+          \vspace{-13pt}
+          
+      \resumeProjectHeading
+          {\href{https://github.com/Sh0702/worth-it}{\textbf{\large{\underline{Wealth Management System}}} \href{Project Link}{\raisebox{-0.1\height}\faExternalLink }} $|$ \large{\underline{Flask(Python), HTML(with Bootstrap), CSS, JavaScript}}}{Oct 2021}
+          \resumeItemListStart
+            \resumeItem{\normalsize{A website was built as a part of Software Design Lab in College in the 5th Semester.}}
+            \resumeItem{\normalsize{The website takes input details of Asset, Liabilities, Income and Expenditure from the client and predicts the net worth of the client currently and upto 5 years in the future assuming a standard growth percentage.}}
+            \resumeItem{\textcolor{accent} {\href{https://worth-it2021.herokuapp.com/} {\underline{\normalsize{Link for website}}}}}
+          \resumeItemListEnd
+          \vspace{-13pt}
+          
+        %   \resumeProjectHeading
+        %   {\href{ProjectLink.com}{\textbf{\large{\underline{Project Name}}} \href{Project Link}{\raisebox{-0.1\height}\faExternalLink }} $|$ \large{\underline{Technology Stack Used}}}{MM YYYY}
+        %   \resumeItemListStart
+        %     \resumeItem{\normalsize{About Project \textbf{highlight key points} }}
+            
+    %       \resumeItemListEnd 
+          
+    % \resumeSubHeadingListEnd
+\vspace{-0.1pt}
+%
+
+
+%-----------EXPERIENCE-----------
+% \section{INTERNSHIP}
+%   \resumeSubHeadingListStart
+
+%     \resumeSubheading
+%       {Company Name \href{certificate Link}{\raisebox{-0.1\height}\faExternalLink }}{MM YYYY -- MM YYYY} 
+%       {\underline{Role Name}}{city, country}
+%       \resumeItemListStart
+%         \resumeItem{\normalsize{About the role \textbf{and responsibilities carried out.}}}
+  
+%       \resumeItemListEnd  
+%   \resumeSubHeadingListEnd
+% \vspace{-12pt}
+%-----------PROGRAMMING SKILLS-----------
+\section{TECHNICAL SKILLS}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{\normalsize{Languages:}}{ \normalsize{Python, C, C++, HTML, CSS, JavaScript, SQL, NoSQL}} \\
+     \textbf{\normalsize{Developer Tools:}}{ \normalsize{Visual Studio Code, Jupyter Notebook}} \\
+     \textbf{\normalsize{Technologies/Frameworks:}}{\normalsize{ Linux, GitHub, Git, Mongo, Flask}} \\
+    }}
+ \end{itemize}
+ \vspace{-15pt}
+
+
+%-----------INVOLVEMENT---------------
+\section{EXTRACURRICULAR}
+    \resumeSubHeadingListStart
+        \resumeSubheading{SSN College Of Engineering}{Aug 2019 -- Present}{\underline{NSS Volunteer}}{Kalavakkam}
+            \linebreak{}
+            \resumeItemListStart
+                \resumeItem{\normalsize{Participated in various social service activities like campus cleaning.}}
+                \resumeItem{\normalsize{Volunteered to visit a government school near our college and teach 7th grade students some basic math,social and science subjects in fun and innovative ways.}}
+                \resumeItem{\normalsize{Participated in 4 NSS day events and won 1st prize in 2 events and 2nd prize in 2 events.}}
+            \resumeItemListEnd
+    \resumeSubHeadingListEnd
+ \vspace{-11pt}
+ 
+ %-----------CERTIFICATIONS---------------
+% \section{CERTIFICATIONS}
+
+% $\sbullet[.75] \hspace{0.1cm}$ {\href{certificateLink.com}{ReactJS \& Redux - Udemy}} \hspace{1.6cm}
+% $\sbullet[.75] \hspace{0.1cm}$ {\href{certificateLink.com}{Java}} \hspace{2.59cm}
+% $\sbullet[.75] \hspace{0.2cm}${\href{certificateLink.com} {Command Line in Linux - Coursera}}\\
+
+% $\sbullet[.75] \hspace{0.2cm}${\href{certificateLink.com}{Python for Data Science - XIE}} \hspace{1cm}
+% $\sbullet[.75] \hspace{0.1cm}$ {\href{certificateLink.com}{SQL}} \hspace{2.6cm}
+% $\sbullet[.75] \hspace{0.2cm}${\href{certificateLink.com}{Microsoft AI Classroom - Microsoft}} \\
+
+% $\sbullet[.75] \hspace{0.2cm}${\href{certificateLink.com}{\textbf{5 Stars} in \textbf{C++} \& \textbf{SQL} \href{certificateLink.com}{\raisebox{-0.1\height}\faExternalLink }}}\hspace{1.45cm}
+% $\sbullet[.75] \hspace{0.2cm}${\href{certificateLink.com}{MongoDB Basics}} \hspace{0.5cm}
+% $\sbullet[.75] \hspace{0.2cm}${\href{certificateLink.com}{NodeJS with Express \& MongoDB - Udemy}} \\
+
+
+\end{document}
